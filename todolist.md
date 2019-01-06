@@ -6,3 +6,4 @@ how many cards are dealt to each player
 how many rounds there will be(depending on the amount of Players)
 who is winning
 make a table
+see what the dealer cant bid
