@@ -1,9 +1,18 @@
 we need to figure out:
-how to score
-collect people's bids
 who is dealing
-how many cards are dealt to each player
-how many rounds there will be(depending on the amount of Players)
+collect people's bids
+see what the dealer cant bid
+how to score
 who is winning
 make a table
-see what the dealer cant bid
+
+
+Things we've done
+how many cards are dealt to each player
+how many rounds there will be(depending on the amount of Players)
+
+
+For the future
+How to save the scores in case it crashes or something
+How to put it on a website
+How to put it on a phone or ipad
