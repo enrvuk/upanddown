@@ -16,3 +16,7 @@ For the future
 How to save the scores in case it crashes or something
 How to put it on a website
 How to put it on a phone or ipad
+
+_____
+
+test line added on Ian's phone - Pythonista app
