@@ -25,4 +25,4 @@ while cardmin>cardmax or cardmax>numberoftricks or cardmin<1:
     cardmax= int(input("what is the maximum ammount of cards you want to be dealt?"))
     cardmin= int(input("what is the minimum ammount of cards you want to be dealt?"))
 
-print("Well done you're not dumb")
+print("well done you're not dumb")
