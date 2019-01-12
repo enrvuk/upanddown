@@ -15,7 +15,7 @@ how many rounds there will be(depending on the amount of Players)
 For the future
 How to save the scores in case it crashes or something
 How to put it on a website
-How to put it on a phone or ipad
+How to put it on a phone or iPad
 
 _____
 
