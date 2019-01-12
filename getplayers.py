@@ -25,4 +25,17 @@ while cardmin>cardmax or cardmax>numberoftricks or cardmin<1:
     cardmax= int(input("what is the maximum ammount of cards you want to be dealt?"))
     cardmin= int(input("what is the minimum ammount of cards you want to be dealt?"))
 
-print("Well done you're not dumb")
+current_dealer=0
+for card_dealt in range (cardmax,cardmin - 1,-1):
+    print("the dealer is "+player_list[current_dealer])
+    first_bidder=current_dealer+1
+    if first_bidder==numberplayers:
+        first_bidder=0
+    print("the ammount of cards being dealt is "+str(card_dealt))
+    numberbid_list=[]
+    for player in range(0,numberplayers):
+        numberbid_list.append(input("What is your bid " + player_list[first_bidder] +"?"))
+        print("your bid is "+ numberbid_list[first_bidder])
+    current_dealer+=1
+    if current_dealer+1 > numberplayers:
+        current_dealer=0
