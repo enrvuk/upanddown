@@ -28,16 +28,34 @@ while cardmin>cardmax or cardmax>numberoftricks or cardmin<1:
 current_dealer=0
 for card_dealt in range (cardmax,cardmin - 1,-1):
     print("the dealer is "+player_list[current_dealer])
+    #we should add comments to explain what lines do
     first_bidder=current_dealer+1
     if first_bidder==numberplayers:
         first_bidder=0
     print("the ammount of cards being dealt is "+str(card_dealt))
     numberbid_list=[]
+    numberwon_list=[]
+    current_bidder=first_bidder
     for player in range(0,numberplayers):
-        numberbid_list.append(input("What is your bid " + player_list[first_bidder] +"?"))
-        print("your bid is "+ numberbid_list[first_bidder])
-#    for player in range(0,numberplayers):
-#        numberbid_list.append(input("How many tricks did " + player_list[first_bidder] +" win?"))
+        numberbid_list.append(int(input("What is your bid " + player_list[current_bidder] +"?")))
+        current_bidder+=1
+        if current_bidder == numberplayers:
+            current_bidder=0
+    print("Play the round....")
+    current_bidder=first_bidder
+    for player in range(0,numberplayers):
+
+        numberwon_list.append(int(input("How many tricks did " + player_list[current_bidder] +" win?")))
+        print (first_bidder)
+        print (len(numberwon_list))
+        print (len(numberbid_list))
+        if numberbid_list[current_bidder] == numberwon_list[current_bidder]:
+            Print("well done you scored"+numberbid_list[current_bidder]*10 +10)
+        else:
+            print("unlucky you scored"+ str(numberwon_list[current_bidder]-numberbid_list[current_bidder]*-10))
+        current_bidder+=1
+        if current_bidder == numberplayers:
+            current_bidder=0
 
     current_dealer+=1
     if current_dealer+1 > numberplayers:
