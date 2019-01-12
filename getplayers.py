@@ -36,6 +36,9 @@ for card_dealt in range (cardmax,cardmin - 1,-1):
     for player in range(0,numberplayers):
         numberbid_list.append(input("What is your bid " + player_list[first_bidder] +"?"))
         print("your bid is "+ numberbid_list[first_bidder])
+#    for player in range(0,numberplayers):
+#        numberbid_list.append(input("How many tricks did " + player_list[first_bidder] +" win?"))
+
     current_dealer+=1
     if current_dealer+1 > numberplayers:
         current_dealer=0
